@@ -59,11 +59,11 @@ const Speech = (function () {
     return 'speechSynthesis' in window;
   }
 
-  function say(text, { rate = 0.85, pitch = 1.1 } = {}) {
+  function say(text, { rate = 0.8, pitch = 1.1 } = {}) {
     if (!isSupported()) return;
     window.speechSynthesis.cancel();
-    // 끝 클리핑 방지: 뒤에 짧은 쉼 추가 (Web Speech API 공통 버그 우회)
-    const utt = new SpeechSynthesisUtterance(text + ',');
+    // 끝 클리핑 방지: 뒤에 긴 침묵 패딩 추가
+    const utt = new SpeechSynthesisUtterance(text + ' . . .');
     utt.lang  = 'es-419';
     utt.rate  = rate;
     utt.pitch = pitch;
