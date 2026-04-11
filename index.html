@@ -363,7 +363,7 @@
 
     document.querySelectorAll('.character-card').forEach(card => {
       function selectCard() {
-        Sounds.click && Sounds.click();
+        try { Sounds.click && Sounds.click(); } catch(e) {}
         document.querySelectorAll('.character-card').forEach(c => c.classList.remove('selected'));
         card.classList.add('selected');
         selectedChar = card.dataset.char;
@@ -383,9 +383,9 @@
 
     startBtn?.addEventListener('click', () => {
       if (!selectedChar || !nameInput.value.trim()) return;
-      Sounds.pop && Sounds.pop();
+      try { Sounds.pop && Sounds.pop(); } catch(e) {}
       App.addProfile(nameInput.value.trim(), selectedChar);
-      App.launchConfetti(40);
+      try { App.launchConfetti(40); } catch(e) {}
       App.showToast(`¡Hola, ${nameInput.value.trim()}! 🎉`);
       setTimeout(showDashboard, 300);
     });
