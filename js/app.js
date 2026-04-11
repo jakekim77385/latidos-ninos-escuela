@@ -103,40 +103,17 @@ const App = (function () {
     }
   }
 
-  /* ─── Init (비동기) ───────────────────────────────────────── */
-  async function _init() {
-    // 1. localStorage에서 먼저 로드 (빠른 첫 렌더)
+  /* ─── Init ────────────────────────────────────────────────── */
+  function _init() {
     const ls = _lsLoad();
     profiles = ls.profiles;
     activeId = ls.activeId;
     state    = _resolveActive();
-
-    // 2. 서버 API 시도
-    const serverData = await _apiLoad();
-    if (serverData && Array.isArray(serverData.profiles)) {
-      _useServer = true;
-
-      // 서버 데이터와 localStorage 데이터 병합
-      // 더 많은 데이터를 가진 쪽 우선
-      if (serverData.profiles.length >= profiles.length) {
-        profiles = serverData.profiles;
-        activeId = serverData.activeId || activeId;
-      } else {
-        // localStorage가 더 최신 → 서버에 업로드
-        await _apiSave();
-      }
-
-      // localStorage 동기화
-      _lsSave();
-      state = _resolveActive();
-      updateNavHearts();
-    }
   }
 
-  /* ─── Save (localStorage + 서버) ────────────────────────── */
+  /* ─── Save ───────────────────────────────────────────────── */
   function _save() {
     _lsSave();
-    if (_useServer) _apiSave(); // 비동기, 실패해도 무시
   }
 
   function _saveCurrentProfile() {
@@ -169,13 +146,6 @@ const App = (function () {
 
   function switchProfile(id) {
     activeId = id;
-    if (_useServer) {
-      fetch('/api/active', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ activeId: id }),
-      }).catch(() => {});
-    }
     localStorage.setItem(ACTIVE_KEY, id);
     state = _resolveActive();
     updateNavHearts();
@@ -252,7 +222,6 @@ const App = (function () {
         </div>
         <div class="navbar-points" id="nav-points-wrap" aria-label="Corazones">
           💖 <span id="nav-hearts">${state.hearts}</span>
-          ${_useServer ? '<span title="서버 연결됨" style="font-size:0.7rem;opacity:0.6;margin-left:4px;">🌐</span>' : ''}
         </div>
       </nav>`;
   }
@@ -262,27 +231,11 @@ const App = (function () {
     if (el) el.textContent = state.hearts;
   }
 
-  async function initPage(active) {
-    // 먼저 localStorage로 빠르게 렌더
-    const ls = _lsLoad();
-    profiles = ls.profiles;
-    activeId = ls.activeId;
-    state    = _resolveActive();
-
+  function initPage(active) {
+    _init();
     const slot = document.getElementById('navbar-container');
     if (slot) slot.innerHTML = renderNav(active);
     updateNavHearts();
-
-    // 백그라운드에서 서버 동기화
-    _init().then(() => {
-      // 서버 동기화 완료 후 nav 업데이트
-      if (slot) slot.innerHTML = renderNav(active);
-      updateNavHearts();
-      // 페이지가 홈이면 프로필 목록 재렌더
-      if (active === 'home' && typeof renderProfiles === 'function') {
-        renderProfiles();
-      }
-    });
   }
 
   /* ─── Toast ──────────────────────────────────────────────── */
