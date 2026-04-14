@@ -8,32 +8,21 @@
 
   /* ─── All Possible Badges ───────────────────────────────── */
   const ALL_BADGES = [
-    { id: 'numbers_master',       icon: '🔢', name: '¡Experto en Números!',     desc: 'Consigue 8+ correctas en Números'    },
-    { id: 'addition_player',      icon: '➕', name: '¡Sumador!',                desc: 'Completa 5 sumas correctas'          },
-    { id: 'addition_expert',      icon: '🌟', name: '¡Maestro de Sumas!',       desc: 'Consigue 9+ en el juego de Sumas'    },
-    { id: 'subtraction_player',   icon: '➖', name: '¡Restador!',               desc: 'Completa 5 restas correctas'         },
-    { id: 'subtraction_expert',   icon: '🎯', name: '¡Maestro de Restas!',      desc: 'Consigue 9+ en Restas'               },
-    { id: 'multiplication_player',icon: '✖️', name: '¡Multiplicador!',          desc: 'Completa 5 mult. correctas'          },
-    { id: 'multiplication_expert',icon: '💥', name: '¡Maestro de Mult.!',       desc: 'Consigue 9+ en Multiplicación'       },
-    { id: 'division_player',      icon: '➗', name: '¡Divisor!',                desc: 'Completa 5 divisiones correctas'     },
-    { id: 'division_expert',      icon: '🎓', name: '¡Maestro de División!',    desc: 'Consigue 9+ en División'             },
-    { id: 'tables_master',        icon: '📋', name: '¡Rey de las Tablas!',      desc: 'Consigue 9+ en Quiz de Tablas'       },
-    { id: 'bingo_winner',         icon: '🎊', name: '¡Ganador del Bingo!',      desc: 'Haz BINGO en el juego de tablas'     },
-    { id: 'first_star',           icon: '⭐', name: 'Primera Estrella',          desc: 'Consigue tu 1ra estrella'            },
-    { id: 'three_stars',          icon: '🌠', name: 'Triple Estrella',           desc: 'Consigue 3 estrellas en un juego'    },
-    { id: 'heart_collector',      icon: '💖', name: 'Coleccionista',             desc: 'Acumula 50 corazones'                },
-    { id: 'level_2',              icon: '🚀', name: '¡Nivel 2!',                 desc: 'Llega al nivel 2'                    },
-    { id: 'level_5',              icon: '🦅', name: '¡Nivel 5!',                 desc: 'Llega al nivel 5'                    },
+    { id: 'words_master',   icon: '📖', name: 'Word Master!',      desc: 'Score 8+ correct in Words Quiz'   },
+    { id: 'phrases_star',   icon: '💬', name: 'Phrase Star!',      desc: 'Score 5+ correct in Phrases Quiz' },
+    { id: 'alpha_master',   icon: '🔤', name: 'Alphabet Expert!',  desc: 'Score 8+ correct in Alphabet Quiz'},
+    { id: 'first_star',     icon: '⭐', name: 'First Star!',       desc: 'Earn your first star'             },
+    { id: 'three_stars',    icon: '🌠', name: 'Triple Star!',      desc: 'Get 3 stars in one game'          },
+    { id: 'heart_collector',icon: '💖', name: 'Heart Collector',   desc: 'Collect 50 hearts'                },
+    { id: 'level_2',        icon: '🚀', name: 'Level 2!',          desc: 'Reach level 2'                    },
+    { id: 'level_5',        icon: '🦅', name: 'Level 5!',          desc: 'Reach level 5'                    },
   ];
 
   /* ─── Module Progress Config ────────────────────────────── */
   const MODULES = [
-    { key: 'numbers',       icon: '🔢', label: 'Números'      },
-    { key: 'addition',      icon: '➕', label: 'Suma'         },
-    { key: 'subtraction',   icon: '➖', label: 'Resta'        },
-    { key: 'multiplication',icon: '✖️', label: 'Multiplicar'  },
-    { key: 'division',      icon: '➗', label: 'División'     },
-    { key: 'tables',        icon: '📋', label: 'Tablas'       },
+    { key: 'words',    icon: '📖', label: 'Words'    },
+    { key: 'phrases',  icon: '💬', label: 'Phrases'  },
+    { key: 'alphabet', icon: '🔤', label: 'Alphabet' },
   ];
 
   /* ─── Auto-award badges based on state ─────────────────── */
@@ -48,11 +37,11 @@
 
   /* ─── Encouragement messages ─────────────────────────────── */
   const ENCOURAGEMENTS = [
-    '¡Cada día que practicas, tu corazón y tu mente se hacen más fuertes! 💪',
-    '¡Los campeones no nacen, se hacen con práctica y mucho amor! 🌺',
-    '¡Sigue así! Los errores son escalones hacia el éxito. 🚀',
-    '¡Eres increíble! ¡Sigue jugando y aprendiendo! ⭐',
-    '¡Las matemáticas son tu superpoder! 🦸',
+    '¡Every word you learn opens a new world! 🌍',
+    '¡Keep practicing! English superstars are made, not born! 🌟',
+    '¡You are amazing! Keep playing and learning! ⭐',
+    '¡Mistakes help you grow! Keep going! 🚀',
+    'English is your superpower! 🦸',
   ];
 
   /* ─── RENDER ─────────────────────────────────────────────── */
