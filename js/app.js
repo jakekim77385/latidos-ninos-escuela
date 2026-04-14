@@ -1,8 +1,10 @@
 /**
- * app.js — Latidos Niños English
+ * app.js — Latidos Niños
  * Global state manager + shared UI utilities
- * ✅ localStorage 기반 프로필 저장
- * ✅ 영어 학습 모듈 (Alphabet / Words / Phrases / Rewards)
+ * Supports multiple player profiles on the same device.
+ *
+ * ✅ 서버 API 우선 (data/profiles.json 영구 저장)
+ * ✅ 서버 없을 때 localStorage fallback (오프라인 지원)
  */
 
 const App = (function () {
@@ -15,9 +17,8 @@ const App = (function () {
     hearts: 0,
     level: 1,
     stars: {
-      alphabet: 0,
-      words: 0,
-      phrases: 0,
+      numbers: 0, addition: 0, subtraction: 0,
+      multiplication: 0, division: 0, tables: 0,
     },
     badges: [],
     soundEnabled: true,
@@ -28,9 +29,13 @@ const App = (function () {
     fox: '🦊', panda: '🐼', chick: '🐥',
   };
 
-  /* ─── Storage Keys ───────────────────────────────────────── */
-  const PROFILES_KEY = 'latidosIngles_profiles';
-  const ACTIVE_KEY   = 'latidosIngles_activeId';
+  /* ─── Storage Keys (localStorage fallback) ───────────────── */
+  const PROFILES_KEY = 'latidosNinos_profiles';
+  const ACTIVE_KEY   = 'latidosNinos_activeId';
+
+  /* ─── Server API flag ────────────────────────────────────── */
+  let _useServer = false;   // 서버 사용 가능 여부 (초기화 후 결정)
+  let _syncPending = false; // 동기화 대기 중
 
   /* ─── State ──────────────────────────────────────────────── */
   let profiles  = [];
@@ -47,12 +52,23 @@ const App = (function () {
     return { ...PROFILE_DEFAULTS, ...p, stars: { ...PROFILE_DEFAULTS.stars, ...p.stars } };
   }
 
-  /* ─── localStorage ───────────────────────────────────────── */
+  /* ─── localStorage helpers ───────────────────────────────── */
   function _lsLoad() {
     try {
       const raw = localStorage.getItem(PROFILES_KEY);
       const aid = localStorage.getItem(ACTIVE_KEY);
-      if (!raw) return { profiles: [], activeId: null };
+      if (!raw) {
+        // Migrate legacy single-profile
+        const legacy = localStorage.getItem('latidosNinos_v1');
+        if (legacy) {
+          const old = JSON.parse(legacy);
+          if (old.character && old.playerName) {
+            const profile = { ...PROFILE_DEFAULTS, ...old, stars: { ...PROFILE_DEFAULTS.stars, ...old.stars }, id: _uid() };
+            return { profiles: [profile], activeId: profile.id };
+          }
+        }
+        return { profiles: [], activeId: null };
+      }
       return { profiles: JSON.parse(raw), activeId: aid };
     } catch { return { profiles: [], activeId: null }; }
   }
@@ -65,6 +81,28 @@ const App = (function () {
     } catch {}
   }
 
+  /* ─── Server API helpers ─────────────────────────────────── */
+  async function _apiLoad() {
+    try {
+      const r = await fetch('/api/profiles', { signal: AbortSignal.timeout(2000) });
+      if (!r.ok) throw new Error('Server error');
+      return await r.json();
+    } catch { return null; }
+  }
+
+  async function _apiSave() {
+    if (!_useServer) return;
+    try {
+      await fetch('/api/profiles', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ profiles, activeId }),
+      });
+    } catch {
+      // 서버 저장 실패 시 무시 (localStorage는 이미 저장됨)
+    }
+  }
+
   /* ─── Init ────────────────────────────────────────────────── */
   function _init() {
     const ls = _lsLoad();
@@ -74,7 +112,9 @@ const App = (function () {
   }
 
   /* ─── Save ───────────────────────────────────────────────── */
-  function _save() { _lsSave(); }
+  function _save() {
+    _lsSave();
+  }
 
   function _saveCurrentProfile() {
     if (!state.id) return;
@@ -163,11 +203,11 @@ const App = (function () {
   function renderNav(active) {
     const b = _base();
     const pages = [
-      { id:'home',     icon:'🏠', label:'Inicio',   href: b+'index.html' },
-      { id:'alphabet', icon:'🔤', label:'Alphabet',  href: b+'pages/alphabet.html' },
-      { id:'words',    icon:'📚', label:'Words',     href: b+'pages/words.html' },
-      { id:'phrases',  icon:'💬', label:'Phrases',   href: b+'pages/phrases.html' },
-      { id:'rewards',  icon:'🏆', label:'Premios',   href: b+'pages/rewards.html' },
+      { id:'home',       icon:'🏠', label:'Inicio',  href: b+'index.html' },
+      { id:'numbers',    icon:'🔢', label:'Números',  href: b+'pages/numbers.html' },
+      { id:'operations', icon:'➕', label:'Juegos',   href: b+'pages/operations.html' },
+      { id:'tables',     icon:'✖️', label:'Tablas',   href: b+'pages/tables.html' },
+      { id:'rewards',    icon:'🏆', label:'Premios',  href: b+'pages/rewards.html' },
     ];
     return `
       <nav class="navbar" role="navigation" aria-label="Navegación principal">
@@ -277,6 +317,11 @@ const App = (function () {
     if (o) o.classList.remove('active');
   }
 
+  /* ─── 서버 상태 조회 (디버깅용) ──────────────────────────── */
+  function getServerStatus() {
+    return { connected: _useServer };
+  }
+
   /* ─── Public API ─────────────────────────────────────────── */
   return {
     getState, getProfiles, getChar, getCharKey,
@@ -284,6 +329,7 @@ const App = (function () {
     addProfile, switchProfile, deleteProfile,
     initPage, updateNavHearts,
     showToast, launchConfetti, showModal, hideModal,
+    getServerStatus,
     CHARACTERS,
   };
 
