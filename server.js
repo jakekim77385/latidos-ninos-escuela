@@ -13,7 +13,7 @@ const http    = require('http');
 const os      = require('os');
 
 const app  = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 
 /* ── 데이터 저장 경로 ───────────────────────────────────────── */
 const DATA_DIR  = path.join(__dirname, 'data');
