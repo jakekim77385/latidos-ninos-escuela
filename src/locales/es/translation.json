@@ -1,0 +1,602 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "checklist": "Verificación",
+    "admin": "Trámites",
+    "health": "Salud",
+    "emotional": "Emocional",
+    "academic": "Académico",
+    "refugee": "Refugiados",
+    "resources": "Directorio",
+    "faq": "Preguntas",
+    "docs": "Documentos",
+    "quickref": "Resumen"
+  },
+  "home": {
+    "title": "Guía de Reingreso Escolar",
+    "subtitle": "Panamá",
+    "description": "Una guía completa para estudiantes y familias que regresan a la escuela después de una ausencia por motivos de salud, o que se integran al sistema educativo por primera vez.",
+    "audience": "Para estudiantes de primaria y secundaria y sus familias",
+    "disclaimer": "NOTA: Esta guía es orientativa. Verifique los requisitos actuales directamente con MEDUCA o su escuela.",
+    "sections": {
+      "checklist": { "title": "Lista de Verificación", "desc": "Pasos personalizados según su situación" },
+      "admin": { "title": "Trámites Administrativos", "desc": "Documentos y procedimientos de matrícula" },
+      "health": { "title": "Documentación de Salud", "desc": "Certificados médicos y gestión en la escuela" },
+      "emotional": { "title": "Apoyo Emocional", "desc": "Recursos para estudiantes y familias" },
+      "academic": { "title": "Apoyo Académico", "desc": "Nivelación y continuidad del aprendizaje" },
+      "refugee": { "title": "Estudiantes Refugiados", "desc": "Derechos, documentación alternativa y apoyo" },
+      "resources": { "title": "Directorio de Recursos", "desc": "Contactos de instituciones y organizaciones" },
+      "faq": { "title": "Preguntas Frecuentes", "desc": "Respuestas a las dudas más comunes" },
+      "docs": { "title": "Documentos y Formularios", "desc": "Modelos de carta y formularios oficiales" }
+    }
+  },
+  "checklist": {
+    "title": "Lista de Verificación Personalizada",
+    "subtitle": "Seleccione su situación para ver los pasos que debe seguir",
+    "selectSituation": "¿Cuál es su situación?",
+    "situations": {
+      "newEnrollment": "Nueva matrícula por motivos de salud",
+      "reingreso": "Reingreso tras período de enfermedad",
+      "refugee": "Estudiante refugiado o migrante"
+    },
+    "progress": "Progreso",
+    "completed": "completado",
+    "printBtn": "Guardar como PDF",
+    "readyTitle": "¡Lista completa!",
+    "readyDesc": "Ha marcado todos los pasos. Guarde su lista personalizada en PDF.",
+    "resetBtn": "Reiniciar lista",
+    "detailWhere": "Dónde",
+    "detailMore": "Ver sección",
+    "items": {
+      "newEnrollment": [
+        { "id": "ne1", "text": "Obtener certificado médico de aptitud escolar", "detail": "Debe indicar que el estudiante está en condiciones de asistir a clases. Puede ser emitido por médico privado, CSS o MINSA.", "where": "CSS, MINSA o médico privado (con sello y número de colegiatura)", "link": "/health" },
+        { "id": "ne2", "text": "Conseguir partida de nacimiento (original y copia)", "detail": "Se requiere original y copia certificada. Puede obtenerse en el Registro Civil en persona o en línea.", "where": "Registro Civil — Tribunal Electoral", "link": "/admin" },
+        { "id": "ne3", "text": "Cédula o pasaporte del estudiante (si aplica)", "detail": "Del estudiante. Si el menor aún no tiene cédula, presentar la cédula del acudiente.", "where": "Tribunal Electoral (cédula) / Consulado (pasaporte extranjero)", "link": "/admin" },
+        { "id": "ne4", "text": "2 fotos tamaño carnet recientes", "detail": "Deben ser recientes, con fondo claro y en papel fotográfico. Muchas farmacias ofrecen este servicio.", "where": "Estudio fotográfico o farmacia", "link": "/admin" },
+        { "id": "ne5", "text": "Documentación de vacunas al día", "detail": "El carnet de vacunas debe estar actualizado según el calendario nacional de MINSA.", "where": "Centro de salud MINSA más cercano", "link": "/health" },
+        { "id": "ne6", "text": "Verificar la escuela más cercana con cupo disponible", "detail": "Llame primero para confirmar cupo disponible y zona escolar asignada. MEDUCA puede orientarle.", "where": "MEDUCA regional o directamente en la escuela", "link": "/admin" },
+        { "id": "ne7", "text": "Visitar la secretaría escolar con todos los documentos", "detail": "Lleve todos los documentos ordenados. La secretaría puede solicitar copias adicionales.", "where": "Secretaría de la escuela asignada", "link": "/admin" },
+        { "id": "ne8", "text": "Solicitar reunión con orientador/a escolar", "detail": "El orientador evaluará las necesidades del estudiante y coordinará apoyos necesarios.", "where": "Oficina de orientación de la escuela", "link": "/emotional" },
+        { "id": "ne9", "text": "Informar sobre condición médica especial si aplica", "detail": "Proporcione carta médica detallada. Si requiere medicamentos durante el horario escolar, entréguelos a enfermería.", "where": "Enfermería y administración de la escuela", "link": "/health" },
+        { "id": "ne10", "text": "Inscribirse en el seguro escolar", "detail": "El Seguro Escolar de la CSS cubre accidentes ocurridos dentro del plantel durante el horario escolar.", "where": "Caja de Seguro Social (CSS)", "link": "/resources" }
+      ],
+      "reingreso": [
+        { "id": "ri1", "text": "Obtener certificado médico de alta o aptitud escolar", "detail": "Emitido por el médico tratante. Debe indicar explícitamente que el estudiante está apto para regresar a clases.", "where": "Médico tratante o centro de salud (CSS / MINSA)", "link": "/health" },
+        { "id": "ri2", "text": "Solicitar formalmente el reingreso al director/a del plantel", "detail": "Presente una carta formal dirigida al director explicando la situación y solicitando el reingreso.", "where": "Dirección del plantel escolar", "link": "/admin" },
+        { "id": "ri3", "text": "Reunir historial académico previo (boletines, notas)", "detail": "Solicite copia de boletines y calificaciones del período anterior a la ausencia en la secretaría.", "where": "Secretaría de la escuela", "link": "/academic" },
+        { "id": "ri4", "text": "Solicitar plan de nivelación académica al docente", "detail": "Por normativa MEDUCA, tiene derecho a un plan de nivelación. Solicítelo por escrito a cada docente.", "where": "Docentes de cada asignatura", "link": "/academic" },
+        { "id": "ri5", "text": "Reunirse con el orientador/a escolar", "detail": "El orientador evaluará el estado emocional y académico del estudiante para coordinar los apoyos necesarios.", "where": "Oficina de orientación de la escuela", "link": "/emotional" },
+        { "id": "ri6", "text": "Informar al personal de salud escolar sobre condición médica", "detail": "Informe sobre medicamentos, restricciones físicas o cualquier supervisión especial que requiera.", "where": "Enfermería de la escuela", "link": "/health" },
+        { "id": "ri7", "text": "Actualizar datos de contacto de emergencia en la escuela", "detail": "Verifique y actualice número de teléfono, contacto alternativo y dirección en la secretaría.", "where": "Secretaría de la escuela", "link": "/admin" },
+        { "id": "ri8", "text": "Preparar al estudiante emocionalmente para el regreso", "detail": "Hable con el estudiante sobre sus miedos. El orientador escolar puede ofrecer apoyo profesional.", "where": "Orientador escolar / psicólogo", "link": "/emotional" },
+        { "id": "ri9", "text": "Coordinar con maestros sobre adaptaciones necesarias", "detail": "Puede solicitar adaptaciones curriculares por escrito. Los docentes están obligados a considerar la situación.", "where": "Docentes de cada asignatura", "link": "/academic" },
+        { "id": "ri10", "text": "Verificar que el seguro escolar esté activo", "detail": "Confirme con la CSS o la secretaría que el seguro escolar esté activo antes del primer día.", "where": "Caja de Seguro Social (CSS)", "link": "/resources" }
+      ],
+      "refugee": [
+        { "id": "re1", "text": "Contactar ONPAR para asistencia y documentación", "detail": "ONPAR orienta sobre el proceso completo y puede proporcionar o gestionar documentación de refugiado.", "where": "ONPAR — migracion.gob.pa / Tel: 507-9500", "link": "/resources" },
+        { "id": "re2", "text": "Reunir cualquier documento de identidad disponible", "detail": "Sirve cualquier documento: tarjeta de refugiado/solicitante de asilo, pasaporte, certificado de nacimiento.", "where": "ONPAR o ACNUR si no tiene ningún documento", "link": "/refugee" },
+        { "id": "re3", "text": "Reunir récords académicos del país de origen si los tiene", "detail": "Notas, diplomas, constancias de estudio. Si no tiene, es posible solicitar una prueba de suficiencia.", "where": "Si no tiene, contacte MEDUCA u ONPAR para alternativas", "link": "/refugee" },
+        { "id": "re4", "text": "Visitar la escuela más cercana y solicitar matrícula", "detail": "Por ley (Decreto 1225/2015), ninguna escuela puede negar matrícula por falta de documentos.", "where": "Escuela pública más cercana según zona de residencia", "link": "/refugee" },
+        { "id": "re5", "text": "Solicitar prueba de suficiencia si no tiene documentos académicos", "detail": "La escuela puede administrar una prueba para determinar el nivel educativo apropiado.", "where": "Dirección del plantel / MEDUCA", "link": "/refugee" },
+        { "id": "re6", "text": "Iniciar proceso de revalidación de estudios en MEDUCA", "detail": "Los documentos extranjeros deben apostillarse o legalizarse y traducirse al español antes de presentarlos.", "where": "MEDUCA — Oficina de Validación de Estudios", "link": "/refugee" },
+        { "id": "re7", "text": "Contactar ACNUR Panamá si encuentra barreras de acceso", "detail": "Si una escuela niega el acceso sin justificación legal, ACNUR puede intervenir y apoyar el caso.", "where": "ACNUR / UNHCR Panamá — acnur.org/panama / Tel: 297-0970", "link": "/resources" },
+        { "id": "re8", "text": "Solicitar apoyo de intérprete o mediador cultural", "detail": "ACNUR y algunas ONGs ofrecen mediadores culturales e intérpretes de idioma sin costo.", "where": "ACNUR, Fe y Alegría, Cáritas Panamá", "link": "/resources" },
+        { "id": "re9", "text": "Inscribirse en programas de apoyo de idioma español", "detail": "El dominio del español es fundamental para la integración. Hay programas gratuitos disponibles.", "where": "ACNUR, centros comunitarios, MEDUCA", "link": "/resources" },
+        { "id": "re10", "text": "Conectarse con orientador/a escolar para apoyo de integración", "detail": "El orientador puede facilitar la integración con compañeros, docentes y la dinámica escolar.", "where": "Oficina de orientación de la escuela", "link": "/emotional" }
+      ]
+    }
+  },
+  "admin": {
+    "title": "Trámites Administrativos",
+    "subtitle": "Documentos y procedimientos para la matrícula y el reingreso",
+    "printBtn": "Guardar como PDF",
+    "newEnrollment": {
+      "title": "Nueva Matrícula",
+      "docs": {
+        "title": "Documentos Requeridos",
+        "items": [
+          { "icon": "ACTA", "name": "Partida de nacimiento", "detail": "Original y fotocopia autenticada. Obtenible en el Registro Civil." },
+          { "icon": "MED.", "name": "Certificado de salud", "detail": "Emitido por médico de CSS, MINSA o médico privado. Debe indicar aptitud para asistir a clases." },
+          { "icon": "C.I.", "name": "Cédula o pasaporte", "detail": "Del estudiante. Si es menor sin cédula, presentar la del acudiente." },
+          { "icon": "FOTO", "name": "Fotos tamaño carnet", "detail": "2 fotografías recientes con fondo claro." },
+          { "icon": "VAC.", "name": "Carnet de vacunas", "detail": "Al día según el esquema nacional del MINSA." },
+          { "icon": "JUR.", "name": "Declaración jurada del acudiente", "detail": "En algunos casos requerida por la escuela. Puede solicitarse ante notario." }
+        ]
+      },
+      "steps": {
+        "title": "Pasos del Proceso",
+        "items": [
+          "Verificar el período de matrícula con la escuela (generalmente enero–febrero para el año escolar siguiente)",
+          "Dirigirse a la secretaría del plantel escolar con todos los documentos",
+          "Llenar el formulario oficial de matrícula",
+          "Solicitar reunión con el orientador/a escolar para planificar la integración",
+          "Informar sobre cualquier condición médica especial o necesidad educativa"
+        ]
+      }
+    },
+    "reingreso": {
+      "title": "Reingreso tras Enfermedad",
+      "docs": {
+        "title": "Documentos Requeridos",
+        "items": [
+          { "icon": "MED.", "name": "Certificado médico de alta", "detail": "Emitido por el médico tratante, indicando que el estudiante está apto para retornar a clases." },
+          { "icon": "SOL.", "name": "Solicitud formal de reingreso", "detail": "Carta dirigida al director/a del plantel explicando la situación y solicitando el reingreso." },
+          { "icon": "HIST.", "name": "Historial académico", "detail": "Boletines y calificaciones del período anterior a la ausencia." },
+          { "icon": "JUST.", "name": "Justificación de inasistencias", "detail": "Documentación médica que respalde el período de ausencia." }
+        ]
+      },
+      "steps": {
+        "title": "Pasos del Proceso",
+        "items": [
+          "Contactar a la escuela antes del regreso para avisar la fecha de retorno",
+          "Presentar el certificado médico de alta en la secretaría",
+          "Reunirse con el director/a y el orientador/a escolar",
+          "Solicitar plan de nivelación académica al docente de cada materia",
+          "Coordinar adaptaciones necesarias según la condición de salud"
+        ]
+      }
+    },
+    "institutions": {
+      "title": "Instituciones Clave",
+      "items": [
+        { "name": "MEDUCA", "role": "Ministerio de Educación — ente rector del sistema educativo", "web": "meduca.gob.pa" },
+        { "name": "Registro Civil", "role": "Emisión de partidas de nacimiento y cédulas", "web": "tribunal-electoral.gob.pa" },
+        { "name": "CSS", "role": "Caja de Seguro Social — certificados de salud y seguro escolar", "web": "css.gob.pa" },
+        { "name": "MINSA", "role": "Ministerio de Salud — carnet de vacunas y atención primaria", "web": "minsa.gob.pa" }
+      ]
+    },
+    "denial": {
+      "title": "¿Qué hacer si la escuela rechaza la matrícula?",
+      "desc": "Todo niño en Panamá tiene derecho constitucional a la educación. Si una escuela pública rechaza una solicitud de matrícula sin justificación legal válida, existe un proceso formal de reclamación.",
+      "legalNote": "Ley 34 de 1995 (Ley Orgánica de Educación), Art. 8 — La educación es un derecho fundamental. Toda negativa de matrícula debe estar justificada legalmente y comunicada por escrito.",
+      "steps": [
+        { "num": "01", "title": "Solicite justificación por escrito", "text": "La escuela está obligada a proporcionar por escrito los motivos del rechazo. Si se niegan a hacerlo, documente la fecha, hora y nombre del funcionario que rechazó." },
+        { "num": "02", "title": "Revise si falta algún documento", "text": "En ocasiones el rechazo se debe a un documento faltante. Consulte la lista de requisitos de MEDUCA y verifique que todo esté completo." },
+        { "num": "03", "title": "Contacte la Dirección Regional de MEDUCA", "text": "Presente una queja formal por escrito en la oficina regional de MEDUCA de su zona. MEDUCA puede instruir a la escuela a aceptar al estudiante." },
+        { "num": "04", "title": "Acuda a la Defensoría del Pueblo", "text": "La Defensoría puede mediar entre la familia y la escuela y emitir recomendaciones vinculantes. Llame al 500-3600 o visíteles de lunes a viernes, 8:00–16:00." },
+        { "num": "05", "title": "Presente queja ante la Procuraduría de la Administración", "text": "Si la negativa es arbitraria, la Procuraduría puede iniciar un proceso sancionatorio contra el funcionario responsable. Tel: 510-0700." }
+      ],
+      "contactsTitle": "Contactos de reclamación",
+      "contacts": [
+        { "name": "MEDUCA Regional", "phone": "511-4400", "role": "Reportar negativa de matrícula" },
+        { "name": "Defensoría del Pueblo", "phone": "500-3600", "role": "Protección de derechos fundamentales" },
+        { "name": "Procuraduría Admin.", "phone": "510-0700", "role": "Queja contra institución pública" }
+      ]
+    }
+  },
+  "health": {
+    "title": "Documentación de Salud",
+    "subtitle": "Gestión de necesidades médicas en el entorno escolar",
+    "printBtn": "Guardar como PDF",
+    "certTitle": "Certificado Médico de Aptitud Escolar",
+    "certDesc": "Este documento es emitido por un médico autorizado y confirma que el estudiante está en condiciones de asistir a clases. Puede obtenerse en:",
+    "certSources": ["Centro de salud del MINSA más cercano", "Policlínica de la CSS (si es asegurado)", "Médico privado con sello y número de idoneidad"],
+    "medicTitle": "Medicamentos en la Escuela",
+    "medicItems": [
+      { "icon": "MED.", "text": "Notificar por escrito a la dirección y enfermería escolar sobre cualquier medicamento que el estudiante deba tomar durante el horario escolar." },
+      { "icon": "REC.", "text": "Entregar copia de la prescripción médica a la enfermería con instrucciones claras de dosificación y horario." },
+      { "icon": "CUST.", "text": "Los medicamentos deben ser guardados en la enfermería escolar, no en la mochila del estudiante, salvo indicación médica especial." },
+      { "icon": "TEL.", "text": "Dejar número de contacto actualizado para emergencias médicas durante el horario escolar." }
+    ],
+    "chronicTitle": "Condiciones Crónicas o Especiales",
+    "chronicDesc": "Si el estudiante tiene una condición crónica (diabetes, epilepsia, asma, condición cardíaca, etc.), se recomienda:",
+    "chronicItems": [
+      "Notificar formalmente a la dirección del plantel mediante carta o formulario",
+      "Proveer un plan de acción de emergencia firmado por el médico tratante",
+      "Reunirse con el personal de enfermería para explicar los signos de alerta",
+      "Solicitar que el docente principal esté informado sobre cómo actuar",
+      "Considerar solicitar un Plan Individualizado de Atención (PIA) si aplica"
+    ],
+    "insuranceTitle": "Seguro Escolar",
+    "insuranceDesc": "La CSS administra el seguro escolar que cubre accidentes dentro del plantel. Para activarlo o verificarlo:",
+    "insuranceItems": [
+      "Solicitar información en la secretaría del plantel o en la policlínica de la CSS más cercana",
+      "Verificar que el estudiante esté inscrito al inicio del año escolar",
+      "El seguro cubre atención médica por accidentes ocurridos en horas y instalaciones escolares"
+    ]
+  },
+  "emotional": {
+    "title": "Apoyo Emocional",
+    "subtitle": "Recursos para el bienestar emocional de estudiantes y familias",
+    "printBtn": "Guardar como PDF",
+    "studentTitle": "Para el Estudiante",
+    "studentItems": [
+      { "icon": "01", "title": "Habla con alguien de confianza", "text": "Cuéntale a un maestro, orientador o familiar cómo te sientes. No tienes que enfrentar esto solo/a." },
+      { "icon": "02", "title": "Dale tiempo a la adaptación", "text": "Es normal sentir nervios al regresar. Cada día será un poco más fácil. No te compares con los demás." },
+      { "icon": "03", "title": "Reconecta con amigos", "text": "Busca a compañeros que recuerdas con cariño. Una pequeña charla puede hacer una gran diferencia." },
+      { "icon": "04", "title": "Pide ayuda en clase", "text": "Si no entiendes algo, pregunta al maestro después de clase. Preguntar es señal de inteligencia, no de debilidad." },
+      { "icon": "05", "title": "Celebra pequeños logros", "text": "Cada día que asistes, cada tarea que entregas, es un avance. Reconoce tu propio esfuerzo." },
+      { "icon": "06", "title": "Cuida tu bienestar diario", "text": "Duerme bien, come a sus horas, y haz algo que disfrutes cada día. El cuerpo y la mente están conectados." }
+    ],
+    "parentTitle": "Para los Padres y Acudientes",
+    "parentItems": [
+      { "icon": "01", "title": "Escucha activamente", "text": "Crea un espacio seguro donde su hijo/a pueda expresar miedos sin ser juzgado. Valide sus emociones antes de dar soluciones." },
+      { "icon": "02", "title": "Mantenga comunicación con la escuela", "text": "Hable regularmente con el orientador/a y los docentes. El trabajo en equipo escuela-familia es fundamental." },
+      { "icon": "ALERT", "title": "Señales de alerta", "text": "Esté atento a: cambios de humor persistentes, negativa a ir a la escuela, aislamiento, cambios en el sueño o apetito. Busque apoyo profesional si persisten." },
+      { "icon": "03", "title": "Rutina en casa", "text": "Establezca horarios regulares para dormir, comer y estudiar. La estructura da seguridad emocional." },
+      { "icon": "04", "title": "Apoyo psicológico profesional", "text": "El orientador/a escolar puede derivar a servicios de salud mental. No es señal de debilidad, es cuidado." }
+    ],
+    "counselorTitle": "El Orientador/a Escolar",
+    "counselorDesc": "Cada escuela pública en Panamá cuenta con un orientador/a escolar. Su rol es:",
+    "counselorItems": [
+      "Apoyar la integración social y emocional del estudiante",
+      "Mediar entre docentes, estudiantes y familias",
+      "Detectar necesidades de apoyo psicológico especializado",
+      "Coordinar adaptaciones académicas necesarias"
+    ],
+    "counselorAction": "Solicite una reunión con el orientador/a el primer día de regreso o antes si es posible."
+  },
+  "academic": {
+    "title": "Apoyo Académico",
+    "subtitle": "Estrategias para retomar el aprendizaje con confianza",
+    "printBtn": "Guardar como PDF",
+    "gradingTitle": "Manejo de Calificaciones y Ausencias",
+    "gradingItems": [
+      { "icon": "AUS.", "title": "Justificación de inasistencias", "text": "Presente el certificado médico en la secretaría. Las ausencias justificadas por causa médica permiten recuperar evaluaciones." },
+      { "icon": "REC.", "title": "Derecho a recuperación", "text": "Según las normas de MEDUCA, el estudiante con ausencias justificadas tiene derecho a recuperar exámenes y actividades evaluativas perdidas." },
+      { "icon": "PZO.", "title": "Plazo para recuperación", "text": "Coordine con cada docente los plazos para entregar trabajos pendientes y presentar evaluaciones de recuperación." }
+    ],
+    "planeTitle": "Plan de Nivelación (Plan de Nivelación Académica)",
+    "planeDesc": "Si el estudiante ha estado ausente por un período prolongado, tiene derecho a solicitar un plan personalizado:",
+    "planeItems": [
+      "Solicitarlo formalmente al director/a del plantel",
+      "Cada docente define las prioridades de contenido a recuperar",
+      "Se establece un cronograma de recuperación realista",
+      "El orientador/a supervisa el proceso de integración"
+    ],
+    "resourcesTitle": "Recursos de Aprendizaje",
+    "resourceItems": [
+      { "icon": "WEB", "name": "Portal MEDUCA Digital", "text": "Plataforma oficial con recursos educativos por nivel y materia.", "url": "meduca.gob.pa" },
+      { "icon": "TV", "name": "Canal educativo televisivo", "text": "MEDUCA transmite contenido educativo por televisión. Consulte la programación." },
+      { "icon": "LIB.", "name": "Biblioteca escolar", "text": "Solicite acceso a los libros de texto en préstamo a través de la secretaría." },
+      { "icon": "GRP.", "name": "Grupos de estudio", "text": "Pida al orientador/a que le conecte con compañeros para grupos de estudio colaborativo." }
+    ],
+    "tipsTitle": "Consejos para el Regreso Académico",
+    "tipItems": [
+      "Empiece con asignaturas que le resulten más fáciles para recuperar la confianza",
+      "Establezca un horario de estudio regular en casa (30-60 min por día como punto de partida)",
+      "No trate de recuperar todo al mismo tiempo — priorizar es clave",
+      "Comunique a los docentes cualquier barrera de comprensión sin demora",
+      "Celebre el progreso diario, por pequeño que sea"
+    ]
+  },
+  "refugee": {
+    "title": "Guía para Estudiantes Refugiados y Migrantes",
+    "subtitle": "Derechos, procedimientos y recursos de apoyo en Panamá",
+    "printBtn": "Guardar como PDF",
+    "rightsTitle": "Sus Derechos Educativos en Panamá",
+    "rightsDesc": "En Panamá, todos los niños y niñas, independientemente de su estatus migratorio, tienen derecho a acceder a la educación pública y gratuita.",
+    "rights": [
+      { "icon": "LEY", "text": "El Decreto Ejecutivo No. 1225 de 2015 garantiza el acceso al sistema educativo para niños refugiados y solicitantes de asilo, incluso sin documentación completa." },
+      { "icon": "EDU.", "text": "La educación primaria y básica es gratuita y obligatoria para todos los niños de 4 a 15 años en escuelas públicas." },
+      { "icon": "DER.", "text": "Ninguna escuela puede negarle la matrícula a un niño o niña únicamente por carecer de documentos de su país de origen." }
+    ],
+    "withoutDocsTitle": "Si No Tiene Documentos Académicos",
+    "withoutDocsItems": [
+      { "icon": "EXAM.", "title": "Prueba de suficiencia", "text": "Si no tiene registros académicos previos, la escuela puede aplicar una prueba de suficiencia para determinar el nivel educativo apropiado." },
+      { "icon": "ID", "title": "Documentos alternativos", "text": "Presente cualquier documento disponible: carné de refugiado/solicitante de asilo emitido por ONPAR, pasaporte, acta de nacimiento, o cualquier identificación." },
+      { "icon": "AYU.", "title": "Apoyo de ACNUR", "text": "Si enfrenta barreras de acceso, contacte a ACNUR (UNHCR) Panamá. Tienen experiencia abogando por los derechos educativos de familias refugiadas." }
+    ],
+    "withDocsTitle": "Si Tiene Documentos Académicos del Exterior",
+    "withDocsItems": [
+      { "icon": "LEG.", "title": "Apostille o legalización consular", "text": "Los documentos del país de origen deben ser apostillados o legalizados a través del consulado panameño en ese país, seguido del Ministerio de Relaciones Exteriores de Panamá." },
+      { "icon": "TRAD.", "title": "Traducción oficial", "text": "Si los documentos no están en español, deben ser traducidos por un Traductor Público autorizado en Panamá." },
+      { "icon": "VAL.", "title": "Revalidación en MEDUCA", "text": "Presente los documentos legalizados y traducidos en la Dirección de Revalidación de Estudios del MEDUCA para reconocimiento oficial del nivel educativo." }
+    ],
+    "languageTitle": "Apoyo con el Idioma",
+    "languageItems": [
+      "Si el español no es el idioma principal, solicite al orientador/a apoyo de mediación lingüística",
+      "Existen programas comunitarios de apoyo de idioma — consulte a ACNUR u ONG locales",
+      "Los docentes pueden adaptar las evaluaciones durante el período de adaptación lingüística"
+    ],
+    "orgsTitle": "Organizaciones de Apoyo",
+    "orgs": [
+      { "name": "ONPAR", "fullName": "Oficina Nacional para la Atención de Refugiados", "role": "Primera instancia para documentación y derechos de refugiados en Panamá" },
+      { "name": "ACNUR / UNHCR", "fullName": "Alto Comisionado de las Naciones Unidas para los Refugiados", "role": "Apoyo legal, abogacía y recursos para familias refugiadas", "url": "acnur.org" },
+      { "name": "MEDUCA", "fullName": "Ministerio de Educación de Panamá", "role": "Proceso de revalidación de estudios y acceso al sistema educativo", "url": "meduca.gob.pa" }
+    ],
+    "denial": {
+      "title": "¿Qué hacer si la escuela niega el acceso?",
+      "desc": "A pesar de las garantías legales, algunos estudiantes refugiados encuentran barreras al intentar inscribirse. Si esto ocurre, siga estos pasos:",
+      "legalNote": "Decreto Ejecutivo No. 1225 de 2015 — Ninguna escuela pública de Panamá puede negar la matrícula a un niño refugiado o solicitante de asilo únicamente por carecer de documentos. La negativa es ilegal y sancionable.",
+      "steps": [
+        { "num": "01", "title": "Recuerde sus derechos y cítelos", "text": "Informe al director/a que el Decreto 1225 de 2015 garantiza el acceso a la educación sin importar el estatus migratorio. Muchos funcionarios responden al ver que la familia conoce sus derechos." },
+        { "num": "02", "title": "Exija justificación escrita del rechazo", "text": "Pida por escrito el motivo legal del rechazo, con nombre y firma del funcionario. Esto es necesario para cualquier reclamación posterior." },
+        { "num": "03", "title": "Contacte a ACNUR inmediatamente", "text": "ACNUR tiene capacidad de intervención directa y experiencia resolviendo estos casos. Son su aliado más efectivo. Tel: 297-0970 / acnur.org/panama" },
+        { "num": "04", "title": "Contacte a ONPAR", "text": "ONPAR puede emitir documentación provisional y comunicarse directamente con la escuela o con MEDUCA para resolver el acceso. Tel: 507-9500" },
+        { "num": "05", "title": "Presente queja ante la Defensoría del Pueblo", "text": "La Defensoría puede emitir resoluciones obligando a la escuela a aceptar al estudiante. Es gratuita y no requiere abogado. Tel: 500-3600" }
+      ],
+      "contactsTitle": "Contactos de intervención urgente",
+      "contacts": [
+        { "name": "ACNUR / UNHCR", "phone": "297-0970", "role": "Intervención en negativa de acceso escolar a refugiados" },
+        { "name": "ONPAR", "phone": "507-9500", "role": "Documentación y apoyo a refugiados" },
+        { "name": "Defensoría del Pueblo", "phone": "500-3600", "role": "Protección de derechos fundamentales" }
+      ]
+    }
+  },
+  "resources": {
+    "title": "Directorio de Recursos",
+    "subtitle": "Instituciones y organizaciones que pueden ayudarle",
+    "printBtn": "Guardar como PDF",
+    "disclaimer": "NOTA: Los datos de contacto pueden actualizarse. Verifique la información directamente con cada institución.",
+    "categories": {
+      "government": "Instituciones Gubernamentales",
+      "health": "Salud",
+      "support": "Apoyo a Refugiados y Migrantes",
+      "ngo": "Organizaciones de Apoyo Comunitario",
+      "child": "Derechos del Niño y la Familia",
+      "emergency": "Líneas de Emergencia y Atención"
+    },
+    "hoursLabel": "Horario",
+    "institutions": [
+      {
+        "category": "government",
+        "name": "MEDUCA",
+        "fullName": "Ministerio de Educación de Panamá",
+        "description": "Ente rector del sistema educativo. Matrícula, revalidación de estudios, políticas educativas, atención a quejas.",
+        "web": "meduca.gob.pa",
+        "phone": "511-4400",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "government",
+        "name": "Registro Civil",
+        "fullName": "Tribunal Electoral — Registro Civil",
+        "description": "Partidas de nacimiento, cédulas de identidad personal, apostillas de documentos.",
+        "web": "tribunal-electoral.gob.pa",
+        "phone": "507-6000",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "government",
+        "name": "Migración",
+        "fullName": "Servicio Nacional de Migración de Panamá",
+        "description": "Permisos de residencia, estatus migratorio, documentación de extranjeros en Panamá.",
+        "web": "migracion.gob.pa",
+        "phone": "507-9700",
+        "hours": "Lun–Vie, 8:00–15:30"
+      },
+      {
+        "category": "government",
+        "name": "MIDES",
+        "fullName": "Ministerio de Desarrollo Social",
+        "description": "Programas de asistencia social, apoyo a familias en vulnerabilidad, subsidios y becas.",
+        "web": "mides.gob.pa",
+        "phone": "500-0700",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "health",
+        "name": "MINSA",
+        "fullName": "Ministerio de Salud de Panamá",
+        "description": "Certificados de salud, carnet de vacunas, centros de salud regionales, programas de salud escolar.",
+        "web": "minsa.gob.pa",
+        "phone": "512-9100",
+        "hours": "Lun–Vie, 7:00–15:00 (varía por centro)"
+      },
+      {
+        "category": "health",
+        "name": "CSS",
+        "fullName": "Caja de Seguro Social",
+        "description": "Atención médica para asegurados, policlínicas, seguro escolar, especialidades pediátricas.",
+        "web": "css.gob.pa",
+        "phone": "199",
+        "hours": "Lun–Vie, 7:00–15:00 (varía por instalación)"
+      },
+      {
+        "category": "health",
+        "name": "Hospital del Niño",
+        "fullName": "Hospital del Niño Dr. José Renán Esquivel",
+        "description": "Hospital de referencia pediátrica. Atención a niños con condiciones médicas complejas.",
+        "web": "hospitaldelniño.org.pa",
+        "phone": "512-9117",
+        "hours": "Emergencias 24h / Consultas externas: Lun–Vie, 7:00–15:00"
+      },
+      {
+        "category": "support",
+        "name": "ONPAR",
+        "fullName": "Oficina Nacional para la Atención de Refugiados",
+        "description": "Documentación y servicios para solicitantes de asilo y refugiados en Panamá. Tarjeta de refugiado.",
+        "web": "migracion.gob.pa",
+        "phone": "507-9500",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "support",
+        "name": "ACNUR / UNHCR",
+        "fullName": "Alto Comisionado de la ONU para los Refugiados — Panamá",
+        "description": "Protección legal, abogacía y recursos para familias refugiadas. Intervención cuando se niega acceso a educación.",
+        "web": "acnur.org/panama",
+        "phone": "297-0970",
+        "hours": "Lun–Vie, 8:00–17:00"
+      },
+      {
+        "category": "support",
+        "name": "OIM",
+        "fullName": "Organización Internacional para las Migraciones — Panamá",
+        "description": "Asistencia a migrantes, integración social, documentación y orientación sobre derechos.",
+        "web": "panama.iom.int",
+        "phone": "265-1194",
+        "hours": "Lun–Vie, 8:00–17:00"
+      },
+      {
+        "category": "ngo",
+        "name": "Fe y Alegría",
+        "fullName": "Fe y Alegría Panamá",
+        "description": "Red de educación popular y promoción social. Apoyo escolar a comunidades vulnerables e inmigrantes.",
+        "web": "feyalegria.org/panama",
+        "phone": "276-4700",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "ngo",
+        "name": "Cáritas Panamá",
+        "fullName": "Cáritas Arquidiocesana de Panamá",
+        "description": "Asistencia humanitaria, apoyo a familias migrantes y refugiadas, mediación cultural.",
+        "web": "caritaspanama.org",
+        "phone": "228-3438",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "ngo",
+        "name": "Cruz Roja",
+        "fullName": "Cruz Roja Panameña",
+        "description": "Ayuda humanitaria, primeros auxilios, apoyo en situaciones de emergencia y desplazamiento.",
+        "web": "cruzroja.org.pa",
+        "phone": "316-1300",
+        "hours": "Lun–Vie, 8:00–16:00 / Emergencias: 24h"
+      },
+      {
+        "category": "child",
+        "name": "SENNIAF",
+        "fullName": "Secretaría Nacional de Niñez, Adolescencia y Familia",
+        "description": "Protección de derechos de niños, niñas y adolescentes. Línea gratuita para denuncias y emergencias.",
+        "web": "senniaf.gob.pa",
+        "phone": "147",
+        "hours": "Línea 147: 24 horas / Oficinas: Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "child",
+        "name": "Defensoría del Pueblo",
+        "fullName": "Defensoría del Pueblo de Panamá",
+        "description": "Defensa de derechos fundamentales, incluyendo el derecho a la educación. Recibe quejas por negación de matrícula.",
+        "web": "defensoria.gob.pa",
+        "phone": "500-3600",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "child",
+        "name": "Procuraduría de la Administración",
+        "fullName": "Procuraduría de la Administración de Panamá",
+        "description": "Recibe quejas contra instituciones públicas, incluyendo escuelas que nieguen acceso sin justificación legal.",
+        "web": "procuraduria-admin.gob.pa",
+        "phone": "510-0700",
+        "hours": "Lun–Vie, 8:00–16:00"
+      },
+      {
+        "category": "emergency",
+        "name": "SNE 9-1-1",
+        "fullName": "Sistema Nacional de Emergencias",
+        "description": "Línea de emergencias nacional. Policía, bomberos, ambulancias. Disponible en todo el territorio.",
+        "phone": "911",
+        "hours": "24 horas, 7 días"
+      },
+      {
+        "category": "emergency",
+        "name": "Línea MIDES 182",
+        "fullName": "Línea de Atención Social — MIDES",
+        "description": "Atención a familias en situación de vulnerabilidad, violencia doméstica, niñez en riesgo y emergencias sociales.",
+        "phone": "182",
+        "hours": "24 horas, 7 días"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Respuestas a las dudas más comunes sobre el reingreso escolar en Panamá",
+    "printBtn": "Guardar como PDF",
+    "sections": {
+      "general": {
+        "title": "Preguntas Generales",
+        "items": [
+          {
+            "q": "¿Puede la escuela rechazar la matrícula de mi hijo/a?",
+            "a": "No. La educación es un derecho constitucional en Panamá (Ley 34 de 1995). Ninguna escuela pública puede negarse a matricular a un niño sin justificación legal escrita. Si enfrenta un rechazo, solicite la razón por escrito y contacte la Dirección Regional de MEDUCA (Tel: 511-4400)."
+          },
+          {
+            "q": "¿Cuánto tiempo tarda el proceso de matrícula?",
+            "a": "Con todos los documentos completos, la matrícula en la secretaría tarda generalmente 1 a 3 días hábiles. En casos con documentación incompleta o situaciones especiales (refugiados, condiciones médicas complejas), el proceso puede extenderse 1 a 2 semanas con intervención de MEDUCA."
+          },
+          {
+            "q": "¿Los documentos requeridos tienen fecha de vencimiento?",
+            "a": "El certificado médico de aptitud escolar es válido generalmente por 6 meses. Las partidas de nacimiento no vencen, pero algunas escuelas solicitan copias certificadas recientes. El carnet de vacunas debe estar al día según el calendario nacional del MINSA."
+          },
+          {
+            "q": "¿Deben estar todos los documentos en español?",
+            "a": "Sí. Todos los documentos presentados ante instituciones educativas panameñas deben estar en español. Los documentos en otro idioma deben ser traducidos por un Traductor Público autorizado en Panamá antes de ser presentados."
+          }
+        ]
+      },
+      "newEnrollment": {
+        "title": "Nueva Matrícula",
+        "items": [
+          {
+            "q": "¿Dónde obtengo el certificado médico de aptitud escolar?",
+            "a": "Puede obtenerlo en un centro de salud del MINSA (servicio gratuito), en una policlínica de la CSS si el niño o un familiar está asegurado, o con un médico privado que cuente con sello y número de idoneidad del Colegio Médico de Panamá."
+          },
+          {
+            "q": "¿Qué pasa si el niño aún no tiene cédula de identidad?",
+            "a": "Para menores sin cédula, se acepta la partida de nacimiento junto con la cédula del padre, madre o acudiente legal. La cédula del estudiante no es requisito indispensable para la matrícula inicial en la mayoría de los planteles."
+          },
+          {
+            "q": "¿Cuándo es el período oficial de matrícula en Panamá?",
+            "a": "El año escolar panameño va de febrero a diciembre. El período de matrícula para el año siguiente generalmente abre en enero y febrero. Es recomendable contactar la escuela antes de enero para conocer sus fechas exactas, ya que pueden variar por plantel."
+          },
+          {
+            "q": "¿Puede mi hijo matricularse en cualquier escuela o debe ser la de su zona?",
+            "a": "Las escuelas públicas asignan cupos por zona de residencia. Si la escuela de su zona no tiene cupos disponibles, MEDUCA puede orientarle sobre escuelas alternativas. Se recomienda llamar primero para confirmar disponibilidad antes de acudir con los documentos."
+          }
+        ]
+      },
+      "reentry": {
+        "title": "Reingreso tras Enfermedad",
+        "items": [
+          {
+            "q": "¿Se pierden las notas del período de ausencia?",
+            "a": "No necesariamente. Las ausencias justificadas por motivos médicos permiten al estudiante recuperar exámenes y actividades evaluativas. El estudiante tiene derecho a un 'plan de nivelación' que cada docente debe elaborar, estableciendo contenidos prioritarios y un cronograma razonable de recuperación."
+          },
+          {
+            "q": "¿Cuánto tiempo tengo para presentar el certificado médico de alta?",
+            "a": "Debe presentarse lo antes posible, idealmente el primer día de regreso. La mayoría de escuelas lo exigen dentro de la primera semana de retorno. Entregue una copia a la secretaría y otra a la enfermería escolar para el expediente de salud del estudiante."
+          },
+          {
+            "q": "¿El niño puede regresar a mitad del trimestre o bimestre?",
+            "a": "Sí. No existe ninguna norma que obligue a esperar el inicio de un nuevo período académico para el reingreso. El estudiante puede reincorporarse en cualquier momento con el certificado médico correspondiente, y la escuela está obligada a recibirlo."
+          },
+          {
+            "q": "¿Qué pasa si la ausencia fue muy prolongada (varios meses)?",
+            "a": "Para ausencias prolongadas, el orientador escolar y los docentes deben coordinar un plan de nivelación más extenso. En casos excepcionales, el consejo de profesores puede evaluar si es más conveniente repetir el año o continuar con apoyo intensivo. La familia tiene derecho a participar activamente en esa decisión."
+          }
+        ]
+      },
+      "refugee": {
+        "title": "Estudiantes Refugiados y Migrantes",
+        "items": [
+          {
+            "q": "¿Puede mi hijo entrar a la escuela sin ningún documento?",
+            "a": "Sí. El Decreto Ejecutivo No. 1225 de 2015 garantiza el acceso al sistema educativo público sin importar el estatus migratorio o la falta de documentos del país de origen. Ninguna escuela pública puede negarlo legalmente. Si enfrenta rechazo, contacte a ACNUR de inmediato (Tel: 297-0970)."
+          },
+          {
+            "q": "¿Qué es la prueba de suficiencia y cómo funciona?",
+            "a": "Es una evaluación que la escuela aplica cuando el estudiante no tiene registros académicos del exterior. Evalúa lectura, escritura y matemáticas básicas para determinar el nivel educativo apropiado. No es un examen para aprobar o reprobar — es una herramienta de ubicación de grado sin consecuencias académicas negativas."
+          },
+          {
+            "q": "¿Qué organización puede ayudarme con más rapidez?",
+            "a": "ONPAR (Tel: 507-9500) es el primer contacto oficial para documentación de refugiados en Panamá. ACNUR/UNHCR (Tel: 297-0970) puede intervenir directamente ante la escuela o MEDUCA si se presentan barreras de acceso. Ambos servicios son completamente gratuitos."
+          },
+          {
+            "q": "¿Puede la escuela exigirnos documentos migratorios?",
+            "a": "En cuanto al acceso educativo, no. Las escuelas no pueden condicionar la matrícula al estatus migratorio del estudiante. Sí pueden solicitar cualquier documento de identificación alternativo disponible, como la tarjeta de refugiado o solicitante de asilo emitida por ONPAR, o cualquier otra identificación."
+          },
+          {
+            "q": "¿Cómo se validan los estudios realizados en el exterior?",
+            "a": "A través de la Dirección de Revalidación de Estudios del MEDUCA. Los pasos son: 1) Apostillar o legalizar los documentos a través del consulado panameño en el país de origen, 2) Traducirlos al español con un Traductor Público autorizado en Panamá, 3) Presentarlos en MEDUCA para reconocimiento oficial. El proceso suele tomar varias semanas."
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Esta guía es orientativa. Verifique los requisitos actuales directamente con MEDUCA o su escuela.",
+    "rights": "Guía de Reingreso Escolar Panamá",
+    "updated": "Contenido actualizado: Abril 2026"
+  },
+  "guide": {
+    "printBtn": "Guardar guía completa"
+  },
+  "docs": {
+    "title": "Documentos y Formularios",
+    "subtitle": "Modelos de carta editables y enlaces a formularios oficiales del Estado panameño",
+    "printBtn": "Guardar como PDF"
+  }
+}

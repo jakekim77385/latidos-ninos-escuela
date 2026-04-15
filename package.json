@@ -1,18 +1,22 @@
 {
-  "name": "0-latidos-ninos",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "0-latidos-ninos-escuela",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "devDependencies": {
+    "puppeteer": "^24.41.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4"
+  },
   "dependencies": {
-    "express": "^5.2.1"
+    "i18next": "^26.0.4",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "react-i18next": "^17.0.3",
+    "react-router-dom": "^7.14.1"
   }
 }

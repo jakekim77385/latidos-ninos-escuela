@@ -1,8 +1,30 @@
-node_modules/
-data/
-.env
+# Logs
+logs
 *.log
-.DS_Store
-Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-.vercel
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Project-specific: local PDF exports and backups (not needed for deployment)
+PDF Spanish/
+PDF English/
+backup_v1/
+*.pdf

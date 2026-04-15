@@ -1,81 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Latidos Niños Inglés — Aprende inglés con juegos divertidos. Palabras, frases, y el alfabeto para niños en Panamá." />
-  <title>Latidos Niños — ¡Aprende Inglés!</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .hero-section {
-      text-align: center;
-      padding: 20px 0 32px;
-    }
-    .hero-title {
-      font-size: clamp(1.6rem, 5vw, 2.4rem);
-      font-weight: 900;
-      color: var(--text-dark);
-      margin: 12px 0 6px;
-    }
-    .hero-tagline {
-      font-size: clamp(0.9rem, 2vw, 1rem);
-      color: var(--text-mid);
-      font-weight: 600;
-    }
-  </style>
-</head>
-<body>
-  <div id="navbar-container"></div>
-
-  <main class="main-content">
-    <div class="container">
-
-      <div class="hero-section">
-        <div style="display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:16px;">
-          <img src="assets/LATIDOS.png" alt="Fundación Latidos"
-               style="width:min(200px,45vw); mix-blend-mode:multiply;" />
-          <div style="width:2px; height:80px; background:rgba(0,0,0,0.1); border-radius:2px;"></div>
-          <img src="assets/Heartitude_transparent.png" alt="Heartitude"
-               style="width:min(160px,38vw);" />
-        </div>
-        <h1 class="hero-title">¡Aprende <span style="color:var(--coral);">Inglés</span> con Latidos!</h1>
-        <p class="hero-tagline">El lugar donde aprender inglés es una aventura 🚀</p>
-      </div>
-
-      <h2 class="section-title">📚 Elige tu aventura</h2>
-      <div class="module-grid">
-        <a href="pages/alphabet.html" class="module-card coral" id="card-alphabet">
-          <span class="module-icon">🔤</span>
-          <div class="module-title">Alphabet</div>
-          <div class="module-subtitle">A-Z · Memoria · Quiz</div>
-        </a>
-        <a href="pages/words.html" class="module-card yellow" id="card-words">
-          <span class="module-icon">📖</span>
-          <div class="module-title">Words</div>
-          <div class="module-subtitle">Colores · Animales · Comida · Más</div>
-        </a>
-        <a href="pages/phrases.html" class="module-card green" id="card-phrases">
-          <span class="module-icon">💬</span>
-          <div class="module-title">Phrases</div>
-          <div class="module-subtitle">Saludos · Sentimientos · Clases</div>
-        </a>
-        <a href="pages/rewards.html" class="module-card purple" id="card-rewards">
-          <span class="module-icon">🏆</span>
-          <div class="module-title">Rewards</div>
-          <div class="module-subtitle">Medallas y logros</div>
-        </a>
-      </div>
-
-    </div>
-  </main>
-
-  <script src="js/app.js"></script>
-  <script src="js/sounds.js"></script>
-  <script>
-    App.initPage('home');
-    if (App.getProfiles().length === 0) {
-      App.addProfile('Jugador', 'bunny');
-    }
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guía completa de reingreso escolar en Panamá para estudiantes y familias. Trámites administrativos, apoyo emocional, académico y recursos para estudiantes refugiados." />
+    <meta name="keywords" content="reingreso escolar, Panama, MEDUCA, estudiantes refugiados, matrícula, apoyo emocional, apoyo académico" />
+    <meta property="og:title" content="Guía de Reingreso Escolar Panamá" />
+    <meta property="og:description" content="Todo lo que necesitas saber para volver a la escuela en Panamá." />
+    <title>Guía de Reingreso Escolar | Panamá</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

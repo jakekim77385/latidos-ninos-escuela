@@ -1,0 +1,601 @@
+{
+  "nav": {
+    "home": "Home",
+    "checklist": "Checklist",
+    "admin": "Admin",
+    "health": "Health",
+    "emotional": "Emotional",
+    "academic": "Academic",
+    "refugee": "Refugees",
+    "resources": "Directory",
+    "faq": "FAQ",
+    "docs": "Documents"
+  },
+  "home": {
+    "title": "School Re-Entry Guide",
+    "subtitle": "Panama",
+    "description": "A comprehensive guide for students and families returning to school after a health-related absence, or integrating into the educational system for the first time.",
+    "audience": "For elementary and middle school students and their families",
+    "disclaimer": "NOTE: This guide is for reference only. Please verify current requirements directly with MEDUCA or your school.",
+    "sections": {
+      "checklist": { "title": "Checklist", "desc": "Personalized steps based on your situation" },
+      "admin": { "title": "Administrative Process", "desc": "Enrollment documents and procedures" },
+      "health": { "title": "Health Documentation", "desc": "Medical certificates and school health management" },
+      "emotional": { "title": "Emotional Support", "desc": "Resources for students and families" },
+      "academic": { "title": "Academic Support", "desc": "Catch-up strategies and learning continuity" },
+      "refugee": { "title": "Refugee Students", "desc": "Rights, alternative documentation, and support" },
+      "resources": { "title": "Resource Directory", "desc": "Institution and organization contacts" },
+      "faq": { "title": "FAQ", "desc": "Answers to the most common questions" },
+      "docs": { "title": "Documents & Forms", "desc": "Letter templates and official form links" }
+    }
+  },
+  "checklist": {
+    "title": "Personalized Checklist",
+    "subtitle": "Select your situation to see the steps you need to follow",
+    "selectSituation": "What is your situation?",
+    "situations": {
+      "newEnrollment": "New enrollment due to health reasons",
+      "reingreso": "Returning after illness/health leave",
+      "refugee": "Refugee or migrant student"
+    },
+    "progress": "Progress",
+    "completed": "completed",
+    "printBtn": "Save as PDF",
+    "readyTitle": "Checklist complete!",
+    "readyDesc": "You have marked all steps. Save your personalized list as PDF.",
+    "resetBtn": "Reset list",
+    "detailWhere": "Where",
+    "detailMore": "View section",
+    "items": {
+      "newEnrollment": [
+        { "id": "ne1", "text": "Obtain a medical fitness certificate", "detail": "Must state that the student is fit to attend classes. Can be issued by a private physician, CSS, or MINSA.", "where": "CSS, MINSA, or private physician (with official seal and license number)", "link": "/health" },
+        { "id": "ne2", "text": "Get birth certificate (original and certified copy)", "detail": "An original and certified copy are required. Available in person or online at the Civil Registry.", "where": "Civil Registry — Electoral Tribunal", "link": "/admin" },
+        { "id": "ne3", "text": "Student ID or passport (if applicable)", "detail": "The student's ID or passport. If the minor does not have an ID, present the guardian's.", "where": "Electoral Tribunal (ID) / Consulate (foreign passport)", "link": "/admin" },
+        { "id": "ne4", "text": "2 recent passport-size photos", "detail": "Must be recent, with a light background and on photographic paper. Many pharmacies offer this service.", "where": "Photo studio or pharmacy", "link": "/admin" },
+        { "id": "ne5", "text": "Up-to-date vaccination card", "detail": "The vaccination card must be current according to the national MINSA vaccination schedule.", "where": "Nearest MINSA health center", "link": "/health" },
+        { "id": "ne6", "text": "Identify the nearest school with available spots", "detail": "Call ahead to confirm available spots and the assigned school zone. MEDUCA can provide guidance.", "where": "Regional MEDUCA office or directly at the school", "link": "/admin" },
+        { "id": "ne7", "text": "Visit the school office with all documents", "detail": "Bring all documents organized. The office may request additional copies.", "where": "Assigned school office", "link": "/admin" },
+        { "id": "ne8", "text": "Request a meeting with the school counselor", "detail": "The counselor will assess the student's needs and coordinate necessary support.", "where": "School counseling office", "link": "/emotional" },
+        { "id": "ne9", "text": "Inform the school about any special medical condition", "detail": "Provide a detailed medical letter. If medications are required during school hours, deliver them to the health office.", "where": "School health office and administration", "link": "/health" },
+        { "id": "ne10", "text": "Register for school insurance", "detail": "The CSS School Insurance covers accidents occurring on school grounds during school hours.", "where": "Caja de Seguro Social (CSS)", "link": "/resources" }
+      ],
+      "reingreso": [
+        { "id": "ri1", "text": "Obtain a medical discharge or fitness certificate", "detail": "Issued by the treating physician. Must explicitly state the student is fit to return to classes.", "where": "Treating physician or health center (CSS / MINSA)", "link": "/health" },
+        { "id": "ri2", "text": "Formally request re-entry from the school principal", "detail": "Submit a formal letter to the principal explaining the situation and requesting re-entry.", "where": "School principal's office", "link": "/admin" },
+        { "id": "ri3", "text": "Gather previous academic records (report cards, grades)", "detail": "Request copies of report cards and grades from the period before the absence from the school office.", "where": "School office", "link": "/academic" },
+        { "id": "ri4", "text": "Request an academic catch-up plan from teachers", "detail": "Under MEDUCA guidelines, you have the right to a catch-up plan. Request it in writing from each teacher.", "where": "Each subject teacher", "link": "/academic" },
+        { "id": "ri5", "text": "Meet with the school counselor", "detail": "The counselor will assess the student's emotional and academic state to coordinate necessary support.", "where": "School counseling office", "link": "/emotional" },
+        { "id": "ri6", "text": "Inform school health staff about the medical condition", "detail": "Inform about medications, physical restrictions, or any special supervision required.", "where": "School health office", "link": "/health" },
+        { "id": "ri7", "text": "Update emergency contact information at the school", "detail": "Verify and update phone number, alternative contact, and address at the school office.", "where": "School office", "link": "/admin" },
+        { "id": "ri8", "text": "Emotionally prepare the student for the return", "detail": "Talk with the student about their fears. The school counselor can provide professional support.", "where": "School counselor / psychologist", "link": "/emotional" },
+        { "id": "ri9", "text": "Coordinate with teachers about necessary accommodations", "detail": "You can request curricular adaptations in writing. Teachers are required to consider the situation.", "where": "Each subject teacher", "link": "/academic" },
+        { "id": "ri10", "text": "Verify that school insurance is active", "detail": "Confirm with CSS or the school office that the school insurance is active before the first day.", "where": "Caja de Seguro Social (CSS)", "link": "/resources" }
+      ],
+      "refugee": [
+        { "id": "re1", "text": "Contact ONPAR for assistance and documentation", "detail": "ONPAR provides guidance on the full process and can provide or help obtain refugee documentation.", "where": "ONPAR — migracion.gob.pa / Tel: 507-9500", "link": "/resources" },
+        { "id": "re2", "text": "Gather any available identity documents", "detail": "Any document works: refugee/asylum seeker card, passport, or birth certificate.", "where": "ONPAR or UNHCR if you have no documents at all", "link": "/refugee" },
+        { "id": "re3", "text": "Gather academic records from country of origin if available", "detail": "Grades, diplomas, transcripts. If unavailable, a proficiency test can be requested instead.", "where": "If unavailable, contact MEDUCA or ONPAR for alternatives", "link": "/refugee" },
+        { "id": "re4", "text": "Visit the nearest school and request enrollment", "detail": "By law (Decree 1225/2015), no school may deny enrollment due to lack of documents.", "where": "Nearest public school in your residential zone", "link": "/refugee" },
+        { "id": "re5", "text": "Request a proficiency test if no academic documents available", "detail": "The school can administer a test to determine the appropriate educational level.", "where": "School principal's office / MEDUCA", "link": "/refugee" },
+        { "id": "re6", "text": "Begin study validation process at MEDUCA", "detail": "Foreign documents must be apostilled or legalized and translated into Spanish before submission.", "where": "MEDUCA — Study Validation Office", "link": "/refugee" },
+        { "id": "re7", "text": "Contact UNHCR Panama if you encounter access barriers", "detail": "If a school denies access without legal justification, UNHCR can intervene and support the case.", "where": "UNHCR Panama — acnur.org/panama / Tel: 297-0970", "link": "/resources" },
+        { "id": "re8", "text": "Request interpreter or cultural mediator support", "detail": "UNHCR and some NGOs offer cultural mediators and language interpreters at no cost.", "where": "UNHCR, Fe y Alegría, Cáritas Panamá", "link": "/resources" },
+        { "id": "re9", "text": "Enroll in Spanish language support programs", "detail": "Spanish proficiency is key for integration. Free programs are available.", "where": "UNHCR, community centers, MEDUCA", "link": "/resources" },
+        { "id": "re10", "text": "Connect with school counselor for integration support", "detail": "The counselor can help facilitate integration with classmates, teachers, and school culture.", "where": "School counseling office", "link": "/emotional" }
+      ]
+    }
+  },
+  "admin": {
+    "title": "Administrative Process",
+    "subtitle": "Documents and procedures for enrollment and re-entry",
+    "printBtn": "Save as PDF",
+    "newEnrollment": {
+      "title": "New Enrollment",
+      "docs": {
+        "title": "Required Documents",
+        "items": [
+          { "icon": "CERT.", "name": "Birth certificate", "detail": "Original and certified copy. Obtainable at the Civil Registry." },
+          { "icon": "MED.", "name": "Health certificate", "detail": "Issued by a CSS, MINSA, or private physician. Must indicate fitness to attend classes." },
+          { "icon": "ID", "name": "ID or passport", "detail": "Student's ID or passport. If a minor without ID, present the guardian's." },
+          { "icon": "PHOTO", "name": "Passport-size photos", "detail": "2 recent photographs with a light background." },
+          { "icon": "VAC.", "name": "Vaccination card", "detail": "Up to date according to the national MINSA vaccination schedule." },
+          { "icon": "AFF.", "name": "Guardian's affidavit", "detail": "Required by some schools. May be requested before a notary." }
+        ]
+      },
+      "steps": {
+        "title": "Process Steps",
+        "items": [
+          "Verify the enrollment period with the school (usually January–February for the following school year)",
+          "Go to the school office with all documents",
+          "Fill out the official enrollment form",
+          "Request a meeting with the school counselor to plan the integration",
+          "Inform about any special medical condition or educational needs"
+        ]
+      }
+    },
+    "reingreso": {
+      "title": "Re-entry After Illness",
+      "docs": {
+        "title": "Required Documents",
+        "items": [
+          { "icon": "MED.", "name": "Medical discharge certificate", "detail": "Issued by the treating physician, indicating the student is fit to return to classes." },
+          { "icon": "REQ.", "name": "Formal re-entry request", "detail": "Letter addressed to the school principal explaining the situation and requesting re-entry." },
+          { "icon": "REC.", "name": "Academic history", "detail": "Report cards and grades from the period prior to the absence." },
+          { "icon": "JUST.", "name": "Absence justification", "detail": "Medical documentation supporting the period of absence." }
+        ]
+      },
+      "steps": {
+        "title": "Process Steps",
+        "items": [
+          "Contact the school before the return to notify the return date",
+          "Present the medical discharge certificate at the school office",
+          "Meet with the principal and school counselor",
+          "Request an academic catch-up plan from each subject teacher",
+          "Coordinate necessary accommodations based on the health condition"
+        ]
+      }
+    },
+    "institutions": {
+      "title": "Key Institutions",
+      "items": [
+        { "name": "MEDUCA", "role": "Ministry of Education — governing body of the educational system", "web": "meduca.gob.pa" },
+        { "name": "Civil Registry", "role": "Issuance of birth certificates and national IDs", "web": "tribunal-electoral.gob.pa" },
+        { "name": "CSS", "role": "Social Security Fund — health certificates and school insurance", "web": "css.gob.pa" },
+        { "name": "MINSA", "role": "Ministry of Health — vaccination cards and primary care", "web": "minsa.gob.pa" }
+      ]
+    },
+    "denial": {
+      "title": "What to do if the school refuses enrollment?",
+      "desc": "Every child in Panama has a constitutional right to education. If a public school refuses an enrollment request without valid legal justification, there is a formal complaint process available.",
+      "legalNote": "Law 34 of 1995 (Organic Education Law), Art. 8 — Education is a fundamental right. Any enrollment refusal must be legally justified and communicated in writing.",
+      "steps": [
+        { "num": "01", "title": "Request written justification", "text": "The school is required to provide the reasons for the refusal in writing. If they refuse to do so, document the date, time, and name of the official who denied enrollment." },
+        { "num": "02", "title": "Check for missing documents", "text": "Sometimes refusals are due to an incomplete file. Review MEDUCA's requirements and verify that all documents are in order." },
+        { "num": "03", "title": "Contact the Regional MEDUCA Office", "text": "File a formal written complaint at your regional MEDUCA office. MEDUCA can instruct the school to accept the student." },
+        { "num": "04", "title": "Visit the Office of the Ombudsman", "text": "The Ombudsman can mediate between the family and the school and issue binding recommendations. Call 500-3600, Mon–Fri, 8:00–16:00." },
+        { "num": "05", "title": "File a complaint with the Administrative Attorney General", "text": "If the refusal is arbitrary, the Administrative Attorney General can initiate a sanctioning process against the responsible official. Tel: 510-0700." }
+      ],
+      "contactsTitle": "Complaint contacts",
+      "contacts": [
+        { "name": "MEDUCA Regional", "phone": "511-4400", "role": "Report enrollment denial" },
+        { "name": "Office of the Ombudsman", "phone": "500-3600", "role": "Protection of fundamental rights" },
+        { "name": "Admin. Attorney General", "phone": "510-0700", "role": "Complaint against public institution" }
+      ]
+    }
+  },
+  "health": {
+    "title": "Health Documentation",
+    "subtitle": "Managing medical needs in the school environment",
+    "printBtn": "Save as PDF",
+    "certTitle": "Medical Fitness Certificate for School",
+    "certDesc": "This document is issued by an authorized physician and confirms the student is fit to attend classes. It can be obtained at:",
+    "certSources": ["Nearest MINSA health center", "CSS polyclinic (if insured)", "Private physician with official seal and license number"],
+    "medicTitle": "Medications at School",
+    "medicItems": [
+      { "icon": "MED.", "text": "Notify in writing the school administration and health office about any medication the student must take during school hours." },
+      { "icon": "RX", "text": "Provide a copy of the medical prescription to the health office with clear dosage and schedule instructions." },
+      { "icon": "CUST.", "text": "Medications must be kept at the school health office, not in the student's backpack, unless medically indicated otherwise." },
+      { "icon": "TEL.", "text": "Leave an updated contact number for medical emergencies during school hours." }
+    ],
+    "chronicTitle": "Chronic or Special Conditions",
+    "chronicDesc": "If the student has a chronic condition (diabetes, epilepsy, asthma, heart condition, etc.), it is recommended to:",
+    "chronicItems": [
+      "Formally notify the school administration by letter or form",
+      "Provide an emergency action plan signed by the treating physician",
+      "Meet with the health office staff to explain warning signs",
+      "Request that the main teacher be informed on how to act",
+      "Consider requesting an Individualized Care Plan (ICA) if applicable"
+    ],
+    "insuranceTitle": "School Insurance",
+    "insuranceDesc": "The CSS administers school insurance that covers accidents within the school. To activate or verify it:",
+    "insuranceItems": [
+      "Request information at the school office or the nearest CSS polyclinic",
+      "Verify that the student is enrolled at the start of the school year",
+      "Insurance covers medical care for accidents occurring on school premises during school hours"
+    ]
+  },
+  "emotional": {
+    "title": "Emotional Support",
+    "subtitle": "Resources for the emotional well-being of students and families",
+    "printBtn": "Save as PDF",
+    "studentTitle": "For the Student",
+    "studentItems": [
+      { "icon": "01", "title": "Talk to someone you trust", "text": "Tell a teacher, counselor, or family member how you feel. You don't have to face this alone." },
+      { "icon": "02", "title": "Give yourself time to adjust", "text": "It's normal to feel nervous about going back. Each day will get a little easier. Don't compare yourself to others." },
+      { "icon": "03", "title": "Reconnect with friends", "text": "Look for classmates you remember fondly. A small conversation can make a big difference." },
+      { "icon": "04", "title": "Ask for help in class", "text": "If you don't understand something, ask your teacher after class. Asking questions shows intelligence, not weakness." },
+      { "icon": "05", "title": "Celebrate small achievements", "text": "Every day you attend, every assignment you submit, is progress. Recognize your own effort." },
+      { "icon": "06", "title": "Take care of your daily well-being", "text": "Get enough sleep, eat on schedule, and do something you enjoy every day. Body and mind are connected." }
+    ],
+    "parentTitle": "For Parents and Guardians",
+    "parentItems": [
+      { "icon": "01", "title": "Listen actively", "text": "Create a safe space where your child can express fears without judgment. Validate their emotions before offering solutions." },
+      { "icon": "02", "title": "Maintain communication with school", "text": "Talk regularly with the counselor and teachers. School-family teamwork is essential." },
+      { "icon": "ALERT", "title": "Warning signs", "text": "Watch for: persistent mood changes, refusal to go to school, isolation, changes in sleep or appetite. Seek professional support if they persist." },
+      { "icon": "03", "title": "Routine at home", "text": "Set regular schedules for sleeping, eating, and studying. Structure provides emotional security." },
+      { "icon": "04", "title": "Professional psychological support", "text": "The school counselor can refer to mental health services. Seeking help is a sign of care, not weakness." }
+    ],
+    "counselorTitle": "The School Counselor",
+    "counselorDesc": "Every public school in Panama has a school counselor. Their role is to:",
+    "counselorItems": [
+      "Support the student's social and emotional integration",
+      "Mediate between teachers, students, and families",
+      "Identify needs for specialized psychological support",
+      "Coordinate necessary academic accommodations"
+    ],
+    "counselorAction": "Request a meeting with the counselor on the first day back, or before if possible."
+  },
+  "academic": {
+    "title": "Academic Support",
+    "subtitle": "Strategies to resume learning with confidence",
+    "printBtn": "Save as PDF",
+    "gradingTitle": "Managing Grades and Absences",
+    "gradingItems": [
+      { "icon": "ABS.", "title": "Justifying absences", "text": "Submit the medical certificate at the school office. Absences justified for medical reasons allow for makeup evaluations." },
+      { "icon": "REC.", "title": "Right to makeup", "text": "Under MEDUCA guidelines, students with justified absences have the right to make up missed exams and evaluations." },
+      { "icon": "DL.", "title": "Makeup deadline", "text": "Coordinate with each teacher the deadlines for submitting pending work and taking makeup evaluations." }
+    ],
+    "planeTitle": "Academic Catch-Up Plan (Plan de Nivelación)",
+    "planeDesc": "If the student has been absent for an extended period, they have the right to request a personalized plan:",
+    "planeItems": [
+      "Request it formally from the school principal",
+      "Each teacher defines the priority content to recover",
+      "A realistic recovery schedule is established",
+      "The counselor supervises the integration process"
+    ],
+    "resourcesTitle": "Learning Resources",
+    "resourceItems": [
+      { "icon": "WEB", "name": "MEDUCA Digital Portal", "text": "Official platform with educational resources by level and subject.", "url": "meduca.gob.pa" },
+      { "icon": "TV", "name": "Educational TV channel", "text": "MEDUCA broadcasts educational content on television. Check the schedule." },
+      { "icon": "LIB.", "name": "School library", "text": "Request access to textbooks on loan through the school office." },
+      { "icon": "GRP.", "name": "Study groups", "text": "Ask the counselor to connect you with classmates for collaborative study groups." }
+    ],
+    "tipsTitle": "Tips for Academic Re-entry",
+    "tipItems": [
+      "Start with subjects you find easier to rebuild confidence",
+      "Establish a regular study schedule at home (30–60 min per day as a starting point)",
+      "Don't try to catch up on everything at once — prioritizing is key",
+      "Communicate any comprehension barriers to teachers without delay",
+      "Celebrate daily progress, however small"
+    ]
+  },
+  "refugee": {
+    "title": "Guide for Refugee and Migrant Students",
+    "subtitle": "Rights, procedures, and support resources in Panama",
+    "printBtn": "Save as PDF",
+    "rightsTitle": "Your Educational Rights in Panama",
+    "rightsDesc": "In Panama, all children, regardless of their immigration status, have the right to access free public education.",
+    "rights": [
+      { "icon": "LAW", "text": "Executive Decree No. 1225 of 2015 guarantees access to the educational system for refugee and asylum-seeking children, even without complete documentation." },
+      { "icon": "EDU.", "text": "Primary and basic education is free and compulsory for all children aged 4 to 15 in public schools." },
+      { "icon": "RIGHT", "text": "No school may deny enrollment to a child solely because they lack documents from their country of origin." }
+    ],
+    "withoutDocsTitle": "If You Don't Have Academic Documents",
+    "withoutDocsItems": [
+      { "icon": "TEST.", "title": "Proficiency test", "text": "If you have no prior academic records, the school can administer a proficiency test to determine the appropriate educational level." },
+      { "icon": "ID", "title": "Alternative documents", "text": "Present any available document: refugee/asylum seeker card issued by ONPAR, passport, birth certificate, or any identification." },
+      { "icon": "SUP.", "title": "UNHCR support", "text": "If you face access barriers, contact UNHCR (ACNUR) Panama. They are experienced in advocating for the educational rights of refugee families." }
+    ],
+    "withDocsTitle": "If You Have Academic Documents from Abroad",
+    "withDocsItems": [
+      { "icon": "LEG.", "title": "Apostille or consular legalization", "text": "Documents from the country of origin must be apostilled or legalized through the Panamanian consulate in that country, followed by the Ministry of Foreign Affairs in Panama." },
+      { "icon": "TRANS.", "title": "Official translation", "text": "If documents are not in Spanish, they must be translated by an authorized Public Translator in Panama." },
+      { "icon": "VAL.", "title": "Validation at MEDUCA", "text": "Submit legalized and translated documents to MEDUCA's Study Validation Office for official recognition of the educational level." }
+    ],
+    "languageTitle": "Language Support",
+    "languageItems": [
+      "If Spanish is not the primary language, ask the counselor for linguistic mediation support",
+      "Community language support programs exist — consult UNHCR or local NGOs",
+      "Teachers can adapt assessments during the language adjustment period"
+    ],
+    "orgsTitle": "Support Organizations",
+    "orgs": [
+      { "name": "ONPAR", "fullName": "National Office for the Attention of Refugees", "role": "First point of contact for documentation and refugee rights in Panama" },
+      { "name": "ACNUR / UNHCR", "fullName": "United Nations High Commissioner for Refugees — Panama", "role": "Legal protection, advocacy, and resources for refugee families", "url": "acnur.org" },
+      { "name": "MEDUCA", "fullName": "Ministry of Education of Panama", "role": "Study validation process and access to the educational system", "url": "meduca.gob.pa" }
+    ],
+    "denial": {
+      "title": "What to do if the school denies access?",
+      "desc": "Despite legal protections, some refugee students face barriers when trying to enroll. If this happens, follow these steps:",
+      "legalNote": "Executive Decree No. 1225 of 2015 — No public school in Panama may deny enrollment to a refugee child or asylum seeker solely due to lack of documents. Such denial is illegal and subject to sanctions.",
+      "steps": [
+        { "num": "01", "title": "Assert your rights — state them clearly", "text": "Inform the school principal that Decree 1225 of 2015 guarantees access to education regardless of immigration status. Many officials respond when they see the family knows their rights." },
+        { "num": "02", "title": "Demand written justification for the refusal", "text": "Ask for the legal grounds for the refusal in writing, with the official's name and signature. This is required for any subsequent complaint." },
+        { "num": "03", "title": "Contact UNHCR immediately", "text": "UNHCR has the capacity for direct intervention and experience resolving these cases. They are your most effective ally. Tel: 297-0970 / acnur.org/panama" },
+        { "num": "04", "title": "Contact ONPAR", "text": "ONPAR can issue provisional documentation and communicate directly with the school or MEDUCA to resolve access. Tel: 507-9500" },
+        { "num": "05", "title": "File a complaint with the Office of the Ombudsman", "text": "The Ombudsman can issue resolutions requiring the school to accept the student. This service is free and does not require a lawyer. Tel: 500-3600" }
+      ],
+      "contactsTitle": "Urgent intervention contacts",
+      "contacts": [
+        { "name": "ACNUR / UNHCR", "phone": "297-0970", "role": "Intervention in refugee school access denials" },
+        { "name": "ONPAR", "phone": "507-9500", "role": "Documentation and refugee support" },
+        { "name": "Office of the Ombudsman", "phone": "500-3600", "role": "Protection of fundamental rights" }
+      ]
+    }
+  },
+  "resources": {
+    "title": "Resource Directory",
+    "subtitle": "Institutions and organizations that can help you",
+    "printBtn": "Save as PDF",
+    "disclaimer": "NOTE: Contact details may be updated. Verify information directly with each institution.",
+    "categories": {
+      "government": "Government Institutions",
+      "health": "Health",
+      "support": "Refugee & Migrant Support",
+      "ngo": "Community Support Organizations",
+      "child": "Children's Rights & Family",
+      "emergency": "Emergency & Helplines"
+    },
+    "hoursLabel": "Hours",
+    "institutions": [
+      {
+        "category": "government",
+        "name": "MEDUCA",
+        "fullName": "Ministry of Education of Panama",
+        "description": "Governing body of the educational system. Enrollment, study validation, education policies, complaint handling.",
+        "web": "meduca.gob.pa",
+        "phone": "511-4400",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "government",
+        "name": "Civil Registry",
+        "fullName": "Electoral Tribunal — Civil Registry",
+        "description": "Birth certificates, national identity cards, apostilles of official documents.",
+        "web": "tribunal-electoral.gob.pa",
+        "phone": "507-6000",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "government",
+        "name": "Immigration",
+        "fullName": "National Immigration Service of Panama",
+        "description": "Residence permits, immigration status, documentation for foreigners in Panama.",
+        "web": "migracion.gob.pa",
+        "phone": "507-9700",
+        "hours": "Mon–Fri, 8:00–15:30"
+      },
+      {
+        "category": "government",
+        "name": "MIDES",
+        "fullName": "Ministry of Social Development",
+        "description": "Social assistance programs, support for vulnerable families, subsidies and scholarships.",
+        "web": "mides.gob.pa",
+        "phone": "500-0700",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "health",
+        "name": "MINSA",
+        "fullName": "Ministry of Health of Panama",
+        "description": "Health certificates, vaccination cards, regional health centers, school health programs.",
+        "web": "minsa.gob.pa",
+        "phone": "512-9100",
+        "hours": "Mon–Fri, 7:00–15:00 (varies by center)"
+      },
+      {
+        "category": "health",
+        "name": "CSS",
+        "fullName": "Social Security Fund",
+        "description": "Medical care for insured individuals, polyclinics, school insurance, pediatric specialties.",
+        "web": "css.gob.pa",
+        "phone": "199",
+        "hours": "Mon–Fri, 7:00–15:00 (varies by facility)"
+      },
+      {
+        "category": "health",
+        "name": "Hospital del Niño",
+        "fullName": "Children's Hospital Dr. José Renán Esquivel",
+        "description": "Pediatric reference hospital. Care for children with complex medical conditions.",
+        "web": "hospitaldelniño.org.pa",
+        "phone": "512-9117",
+        "hours": "Emergency: 24h / Outpatient: Mon–Fri, 7:00–15:00"
+      },
+      {
+        "category": "support",
+        "name": "ONPAR",
+        "fullName": "National Office for the Attention of Refugees",
+        "description": "Documentation and services for asylum seekers and refugees in Panama. Refugee identity card.",
+        "web": "migracion.gob.pa",
+        "phone": "507-9500",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "support",
+        "name": "ACNUR / UNHCR",
+        "fullName": "UN High Commissioner for Refugees — Panama",
+        "description": "Legal protection, advocacy and resources for refugee families. Intervenes when access to education is denied.",
+        "web": "acnur.org/panama",
+        "phone": "297-0970",
+        "hours": "Mon–Fri, 8:00–17:00"
+      },
+      {
+        "category": "support",
+        "name": "IOM",
+        "fullName": "International Organization for Migration — Panama",
+        "description": "Assistance to migrants, social integration, documentation and guidance on rights.",
+        "web": "panama.iom.int",
+        "phone": "265-1194",
+        "hours": "Mon–Fri, 8:00–17:00"
+      },
+      {
+        "category": "ngo",
+        "name": "Fe y Alegría",
+        "fullName": "Fe y Alegría Panama",
+        "description": "Network of popular education and social promotion. School support for vulnerable communities and immigrants.",
+        "web": "feyalegria.org/panama",
+        "phone": "276-4700",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "ngo",
+        "name": "Cáritas Panamá",
+        "fullName": "Cáritas Arquidiocesana de Panamá",
+        "description": "Humanitarian assistance, support for migrant and refugee families, cultural mediation.",
+        "web": "caritaspanama.org",
+        "phone": "228-3438",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "ngo",
+        "name": "Red Cross",
+        "fullName": "Panamanian Red Cross",
+        "description": "Humanitarian aid, first aid, support in emergency and displacement situations.",
+        "web": "cruzroja.org.pa",
+        "phone": "316-1300",
+        "hours": "Mon–Fri, 8:00–16:00 / Emergencies: 24h"
+      },
+      {
+        "category": "child",
+        "name": "SENNIAF",
+        "fullName": "National Secretariat for Children, Adolescents and Family",
+        "description": "Protection of children's and adolescents' rights. Free hotline for reports and emergencies.",
+        "web": "senniaf.gob.pa",
+        "phone": "147",
+        "hours": "Hotline 147: 24 hours / Offices: Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "child",
+        "name": "Ombudsman",
+        "fullName": "Office of the Ombudsman of Panama",
+        "description": "Defense of fundamental rights, including the right to education. Accepts complaints about enrollment denials.",
+        "web": "defensoria.gob.pa",
+        "phone": "500-3600",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "child",
+        "name": "Procuraduria Admin.",
+        "fullName": "Office of the Administrative Attorney General",
+        "description": "Receives complaints against public institutions, including schools that deny access without legal justification.",
+        "web": "procuraduria-admin.gob.pa",
+        "phone": "510-0700",
+        "hours": "Mon–Fri, 8:00–16:00"
+      },
+      {
+        "category": "emergency",
+        "name": "SNE 9-1-1",
+        "fullName": "National Emergency System",
+        "description": "National emergency line. Police, fire department, ambulances. Available throughout Panama.",
+        "phone": "911",
+        "hours": "24 hours, 7 days"
+      },
+      {
+        "category": "emergency",
+        "name": "MIDES Helpline 182",
+        "fullName": "Social Assistance Line — MIDES",
+        "description": "Support for vulnerable families, domestic violence, children at risk, and social emergencies.",
+        "phone": "182",
+        "hours": "24 hours, 7 days"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most common questions about school re-entry in Panama",
+    "printBtn": "Save as PDF",
+    "sections": {
+      "general": {
+        "title": "General Questions",
+        "items": [
+          {
+            "q": "Can a school reject my child's enrollment?",
+            "a": "No. Education is a constitutional right in Panama (Ley 34 of 1995). No public school can refuse to enroll a child without valid written legal justification. If you face rejection, request the reason in writing and contact your regional MEDUCA office (Tel: 511-4400)."
+          },
+          {
+            "q": "How long does the enrollment process take?",
+            "a": "With all documents complete, the secretar\u00eda typically processes enrollment in 1\u20133 business days. Cases involving incomplete documentation or special circumstances (refugees, complex medical conditions) may take 1\u20132 weeks with MEDUCA involvement."
+          },
+          {
+            "q": "Do required documents have an expiration date?",
+            "a": "Medical fitness certificates are generally valid for 6 months. Birth certificates don't expire, but some schools request recent certified copies. Vaccination cards must be current per the MINSA national schedule."
+          },
+          {
+            "q": "Must all documents be in Spanish?",
+            "a": "Yes. All documents submitted to Panamanian educational institutions must be in Spanish. Foreign-language documents must be officially translated by an authorized Traductor P\u00fablico (public translator) in Panama before submission."
+          }
+        ]
+      },
+      "newEnrollment": {
+        "title": "New Enrollment",
+        "items": [
+          {
+            "q": "Where do I get a medical fitness certificate?",
+            "a": "You can get one at any MINSA health center (free of charge), at a CSS polyclinic if the child or a family member is insured, or from a private doctor with an official registration number from the Colegio M\u00e9dico de Panam\u00e1."
+          },
+          {
+            "q": "What if my child doesn't have a national ID (c\u00e9dula)?",
+            "a": "For minors without a c\u00e9dula, the birth certificate plus the parent or legal guardian's ID are accepted. The student's own ID is not a mandatory requirement for initial enrollment at most schools."
+          },
+          {
+            "q": "When is the official enrollment period in Panama?",
+            "a": "Panama's school year runs February to December. Enrollment for the following year typically opens in January\u2013February. Contact the school before January to confirm their specific dates, as they may vary by institution."
+          },
+          {
+            "q": "Does my child have to attend the school in our zone?",
+            "a": "Public schools assign spots by residential zone. If your zone school has no vacancies, MEDUCA can guide you to alternatives. Call ahead to confirm availability before arriving with documents."
+          }
+        ]
+      },
+      "reentry": {
+        "title": "Re-Entry After Illness",
+        "items": [
+          {
+            "q": "Will my child lose grades from the absence period?",
+            "a": "Not necessarily. Medically justified absences allow the student to recover exams and evaluated activities. The student has the right to a 'plan de nivelaci\u00f3n' (academic recovery plan) that each teacher must prepare, outlining priority content and a reasonable recovery timeline."
+          },
+          {
+            "q": "How soon must the medical discharge certificate be submitted?",
+            "a": "Submit it as soon as possible\u2014ideally on the first day back. Most schools require it within the first week of return. Provide one copy to the secretar\u00eda and one to the school nurse (enfermer\u00eda) for the student's health file."
+          },
+          {
+            "q": "Can my child return mid-trimester?",
+            "a": "Yes. No rule requires waiting for a new academic period. The student may return at any time with the appropriate medical certificate, and the school is obligated to accept them."
+          },
+          {
+            "q": "What if the absence was very long (several months)?",
+            "a": "For extended absences, the school counselor and teachers must coordinate a more comprehensive recovery plan. In exceptional cases, the faculty council may assess whether grade repetition or intensive support is more appropriate. Families have the right to actively participate in that decision."
+          }
+        ]
+      },
+      "refugee": {
+        "title": "Refugee and Migrant Students",
+        "items": [
+          {
+            "q": "Can my child enter school without any documents?",
+            "a": "Yes. Executive Decree No. 1225 of 2015 guarantees access to public education regardless of immigration status or lack of documents from the country of origin. No public school can legally deny this. If refused, contact ACNUR immediately (Tel: 297-0970)."
+          },
+          {
+            "q": "What is the 'prueba de suficiencia' (sufficiency test) and how does it work?",
+            "a": "It is an assessment the school uses when a student has no academic records from abroad. It evaluates reading, writing, and basic math to determine the appropriate grade level. It is a placement tool\u2014not a pass/fail exam\u2014with no negative academic consequences."
+          },
+          {
+            "q": "Which organization can help me most quickly?",
+            "a": "ONPAR (Tel: 507-9500) is the official first point of contact for refugee documentation in Panama. ACNUR/UNHCR (Tel: 297-0970) can directly intervene with schools or MEDUCA if access is blocked. Both services are completely free of charge."
+          },
+          {
+            "q": "Can the school demand immigration documents?",
+            "a": "Regarding enrollment access, no. Schools cannot make enrollment conditional on immigration status. They may, however, request any available alternative identification such as a refugee or asylum-seeker card issued by ONPAR, or any other identification document you have."
+          },
+          {
+            "q": "How are foreign academic credentials validated?",
+            "a": "Through MEDUCA's Revalidaci\u00f3n de Estudios office. Steps: 1) Have documents apostilled or legalized through the Panamanian consulate in the country of origin, 2) Translate them to Spanish by an authorized Traductor P\u00fablico in Panama, 3) Submit to MEDUCA for official recognition. The process typically takes several weeks."
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "This guide is for reference only. Please verify current requirements directly with MEDUCA or your school.",
+    "rights": "Panama School Re-Entry Guide",
+    "updated": "Content updated: April 2026"
+  },
+  "guide": {
+    "printBtn": "Save complete guide"
+  },
+  "docs": {
+    "title": "Documents & Forms",
+    "subtitle": "Editable letter templates and links to official Panamanian government forms",
+    "printBtn": "Save as PDF"
+  }
+}
